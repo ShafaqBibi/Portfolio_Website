@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Poppins&display=swap" rel="stylesheet">
+    <title>Practice Project Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            font-family: 'Poppins', sans-seri;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgba(138, 125, 5, 0.775);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 15px;
+            font-size: 1.25rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgba(138, 125, 5, 0.775);
+            background-color: black;
+            padding: 10px;
+        }
+
+        .left {
+            font-size: 1.95rem;
+        }
+
+        .firstSection {
+            display: flex;
+            margin: 70px 0;
+            align-items: center;
+            justify-content: space-around;
+            /*background-color: rebeccapurple;*/
+        }
+
+        .firstSection>div {
+            width: 35%;
+        }
+
+        .leftSection {
+            font-size: 3.00rem;
+            color: rgb(255, 255, 255);
+            /*width: 30%;*/
+        }
+
+        /*.leftSection div{
+            width: 100%;
+        }*/
+
+        .rightSection img {
+            width: 120%;
+            height: 110%;
+        }
+
+        .nameclr {
+            color: rgb(138, 125, 5, 0.775);
+        }
+
+        #element {
+            color: rgb(138, 125, 5, 0.775);
+        }
+
+        .secondSection {
+            max-width: 85vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(138, 125, 5, 0.775);
+            height: 2px;
+            margin: 60px 70px;
+        }
+
+        .secondSection .text-gray {
+            color: gray;
+        }
+
+        .secondSection .box {
+            background: rgb(138, 125, 5, 0.775);
+            height: 2px;
+            width: 150vh;
+            margin: 60px 0px;
+            display: flex;
+        }
+
+        .secondSection .verticle {
+            background-color: rgb(138, 125, 5, 0.775);
+            height: 70px;
+            width: 0.75px;
+            margin: 0px 110px;
+        }
+
+        .img-top {
+            width: 30px;
+            position: relative;
+            top: -35px;
+            left: -14px;
+        }
+
+        .verticle-title {
+            position: relative;
+            top: 40px;
+            width: 115px;
+        }
+
+        .verticle-desc {
+            position: relative;
+            top: 50px;
+            width: 182px;
+            font-size: 11px;
+            color: rgb(138, 125, 5, 0.775);
+        }
+
+        footer {
+            background-color: rgb(138, 125, 5, 0.775);
+
+        }
+
+        .footersection {
+            display: flex;
+            padding: 20px 110px;
+            justify-content: space-evenly;
+        }
+
+        .footersection>div {
+            width: 190px;
+        }
+
+        .footersection ul {
+            list-style: none;
+
+        }
+
+        .footersection .footer-fr p {
+            font-size: 12px;
+            text-align: justify;
+        }
+
+        .footer-rights {
+            text-align: center;
+            padding: 10px;
+            background-color: black;
+            font-size: 15px;
+        }
+
+        .btn-down {
+            background-color: rgb(138, 125, 5, 0.775);
+            color: white;
+            width: 24vh;
+            font-size: 18px;
+            padding: 12px;
+            border-radius: 2px;
+            border: 3px;
+            cursor: pointer;
+        }
+
+        .btn-git {
+            background-color: rgb(138, 125, 5, 0.775);
+            color: white;
+            width: 16vh;
+            font-size: 18px;
+            padding: 12px;
+            border-radius: 2px;
+            border: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Shafaq's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, I'm <span class="nameclr">Shafaq Bibi</span>
+                <div>And I'm a Passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn-down">Download Resume</button>
+                    <button class="btn-git">Visit GitHub</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="img1.png" alt="developer girl">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="verticle">
+                    <img class="img-top" src="dev.png" alt="developer">
+                    <div class="verticle-title">Web Developer (2000 - 2002)</div>
+                    <div class="verticle-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia porro maxime velit quo
+                        perspiciatis ratione quae mollitia tempora iste vitae explicabo eveniet dicta ut necessitatibus
+                        suscipit saepe, aspernatur nihil iure.
+                    </div>
+                </div>
+                <div class="verticle">
+                    <img class="img-top" src="python.png" alt="developer">
+                    <div class="verticle-title">Python Developer (2002 - 2004)</div>
+                    <div class="verticle-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia porro maxime velit quo
+                        perspiciatis ratione quae mollitia tempora iste vitae explicabo eveniet dicta ut necessitatibus
+                        suscipit saepe, aspernatur nihil iure.
+                    </div>
+                </div>
+                <div class="verticle">
+                    <img class="img-top" src="android.png" alt="developer">
+                    <div class="verticle-title">Android Developer (2004 - 2005)</div>
+                    <div class="verticle-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia porro maxime velit quo
+                        perspiciatis ratione quae mollitia tempora iste vitae explicabo eveniet dicta ut necessitatibus
+                        suscipit saepe, aspernatur nihil iure.
+                    </div>
+                </div>
+                <div class="verticle">
+                    <img class="img-top" src="nodejs.png" alt="developer">
+                    <div class="verticle-title">Node.js Developer (2005 - 2008)</div>
+                    <div class="verticle-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia porro maxime velit quo
+                        perspiciatis ratione quae mollitia tempora iste vitae explicabo eveniet dicta ut necessitatibus
+                        suscipit saepe, aspernatur nihil iure.
+                    </div>
+                </div>
+                <div class="verticle">
+                    <img class="img-top" src="fsdeveloper.png" alt="developer">
+                    <div class="verticle-title">Full Stack Developer (2008 - 2012)</div>
+                    <div class="verticle-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia porro maxime velit quo
+                        perspiciatis ratione quae mollitia tempora iste vitae explicabo eveniet dicta ut necessitatibus
+                        suscipit saepe, aspernatur nihil iure.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footersection">
+            <div class="footer-f">
+                <h3>Shafaq Developer Portfolio</h3>
+            </div>
+            <div class="footer-s">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+            <div class="footer-t">
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Linkedin</li>
+                    <li>Twitter</li>
+                </ul>
+            </div>
+            <div class="footer-fr">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae atque consectetur maxime veniam
+                    labore laborum doloribus exercitationem dolorum rem, possimus itaque ut numquam. Quasi, repudiandae
+                    est rerum eveniet nesciunt impedit!</p>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyrigjt &copy shafaqportfolio.com || All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Python Developer', 'Web Designer', 'Video Editor'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
